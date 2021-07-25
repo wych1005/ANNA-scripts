@@ -1,9 +1,16 @@
+"""
+This script generates altitude plots from the .txt metadata files obtained after the EO and IR video data from the FLIR Duo Pro R camera setup has been split using the flirpy library.
+
+:arg path: path to the folder that contains the metadata files
+:arg maw: sample window for the moving average calculation applied to smooth / filter the noisy GPS data
+
+"""
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import argparse
-
 
 
 def plot(dir, maw):
