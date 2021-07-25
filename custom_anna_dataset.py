@@ -29,10 +29,10 @@ if __name__ == "__main__":
     parser.add_argument("-test_size", type=int, default=100, help="number of EO/IR test images")
     args = parser.parse_args()
 
-    eo_0_file = os.listdir(args.eo_normal)
-    eo_1_file = os.listdir(args.eo_anomalous)
-    ir_0_file = os.listdir(args.ir_normal)
-    ir_1_file = os.listdir(args.ir_anomalous)
+    eo_0_file = listdir(args.eo_normal)
+    eo_1_file = listdir(args.eo_anomalous)
+    ir_0_file = listdir(args.ir_normal)
+    ir_1_file = listdir(args.ir_anomalous)
 
     eo0_frame_list = []
     eo1_frame_list = []
